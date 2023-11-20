@@ -50,7 +50,7 @@ let penguinPng = document.createElement("img");
 
 function penguinAppear(e) {
   penguinPng.src =
-    "https://github.com/EvaOg/Simple-js-works/blob/main/drag_n_drop/penguin.png?raw=true";
+    "https://github.com/EvaOg/JS_works/blob/main/Drug&drop/penguin.png?raw=true";
   penguinPng.setAttribute("id", "penguinPng");
   penguinResultDiv.appendChild(penguinPng);
 
@@ -72,7 +72,7 @@ const catPng = document.createElement("img");
 
 function catAppear(e) {
   catPng.src =
-    "https://github.com/EvaOg/Simple-js-works/blob/main/drag_n_drop/cat.png?raw=true";
+    "https://github.com/EvaOg/JS_works/blob/main/Drug&drop/cat.png?raw=true";
   catPng.setAttribute("id", "catPng");
   catResultDiv.appendChild(catPng);
   square.setAttribute("id", "stickDisappear");
@@ -93,7 +93,7 @@ const owlPng = document.createElement("img");
 
 function owlAppear(e) {
   owlPng.src =
-    "https://github.com/EvaOg/Simple-js-works/blob/main/drag_n_drop/owl.png?raw=true";
+    "https://github.com/EvaOg/JS_works/blob/main/Drug&drop/owl.png?raw=true";
   owlPng.setAttribute("id", "owlPng");
   owlResultDiv.appendChild(owlPng);
   square.setAttribute("id", "stickDisappear");
