@@ -1,0 +1,142 @@
+:root {
+  --color-light: #d4c4cc;
+  --color-btn: #696868;
+  --color-transparent: #ffffff00;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#f7f8f2, #c0c0c0);
+}
+
+.container {
+  margin-top: 10%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.light {
+  position: relative;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: var(--color-light);
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 0.5s ease;
+  box-shadow: inset 0px 0px 0.5em 0px var(--color-light),
+    0px 0px 0.5em 0px var(--color-light);
+}
+
+.light:hover {
+  transform: scale(1.05);
+}
+
+.light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  filter: blur(0.3em);
+  transform: translateY(120%) rotateX(45deg) scale(1, 0.25);
+  background-color: var(--color-light);
+  pointer-events: none;
+}
+
+.light:hover::before {
+  filter: blur(0.35em);
+  opacity: 1;
+}
+
+.containerBtn {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 40%;
+  margin-right: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+button {
+  margin-top: 10px;
+  border: 1px solid grey;
+  cursor: pointer; /* now added in my edit */
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 25px;
+  color: #696868;
+  font-size: 30px;
+  font-family: arial;
+  background-color: var(--color-light);
+  transition: all 0.8s;
+  position: relative; /* now changed in my edit */
+  z-index: 1; /* because text to be placed over the background */
+  overflow: hidden; /* because background of div not to be overflow from button. */
+}
+
+.background {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* top-left and transform are for putting div in the middle of button.*/
+  transition: 1s;
+  z-index: -1;
+  border-radius: 50%;
+}
+.start .background {
+  background-image: linear-gradient(rgba(59, 110, 59, 0.5), #73ad69);
+}
+
+.stop .background {
+  background-image: linear-gradient(rgba(217, 87, 87, 0.505), #ce7878);
+}
+button:hover {
+  color: white;
+}
+
+button:hover .background {
+  width: 150%;
+  height: 250%; /* 150% and 250% because div completely to be fill the space of the button.*/
+}
+
+@media (max-width: 900px) {
+  .light::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .containerBtn {
+    margin-top: 10%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .containerBtn {
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}

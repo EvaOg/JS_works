@@ -1,0 +1,160 @@
+body {
+  background-color: #355070;
+  margin: 0%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.picDescription {
+  width: 100%;
+  margin-top: 7%;
+  color: #f2e9e4;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.picDescription:hover {
+  cursor: pointer;
+}
+
+.activeDescription {
+  font-weight: bold;
+}
+
+li {
+  margin-left: -30px;
+}
+.ulforImg {
+  list-style: none;
+  /* padding-inline-start: 0; */
+}
+
+.cat2,
+.cat3 {
+  padding-left: 50px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 500px;
+}
+
+.cat {
+  display: none;
+  width: 360px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.active {
+  display: inline;
+  opacity: 1;
+}
+
+.divArrows {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.prev,
+.next {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  /*   border:solid 1px white; */
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.prev:after,
+.next:after {
+  position: absolute;
+  display: block;
+  content: "";
+  color: #f2e9e4;
+  width: 15px;
+  height: 15px;
+  /*   border:solid 1px;  */
+  top: -7px;
+  border-bottom: solid 2px;
+  transform: translatex(4px);
+}
+
+.prev:before,
+.next:before {
+  position: absolute;
+  display: block;
+  content: "";
+  color: #f2e9e4;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  top: 29%;
+  left: 2px;
+  transform-origin: 0% 0%;
+  transform: rotatez(-45deg);
+}
+.prev:hover:before,
+.next:hover:before {
+  animation: aniArrow01 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+.prev:hover:after,
+.next:hover:after {
+  animation: aniArrow02 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+@keyframes aniArrow01 {
+  0% {
+    transform: rotatez(-45deg) translateY(30px) translateX(30px);
+  }
+  100% {
+    transform: rotatez(-45deg) translateY(-35px) translateX(-35px);
+  }
+}
+
+@keyframes aniArrow02 {
+  0% {
+    transform: translateX(45px);
+  }
+  100% {
+    transform: translateX(-44px);
+  }
+}
+
+@keyframes borderAni {
+  0% {
+    border: solid 2px #f2e9e4;
+  }
+  100% {
+    border: solid 2px #f2e9e4;
+    border-radius: 50%;
+  }
+}
+
+.next {
+  left: 35px;
+  transform-origin: 0% 29%;
+  transform: rotatez(180deg);
+}
+
+.prev {
+  right: 5px;
+}

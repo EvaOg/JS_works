@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Loading photos fetch</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="inputForm">
+      <div class="text">Enter the desired image size</div>
+
+      <div class="inputContainer">
+        <div>
+          <label for="width" class="widthText">Width:</label>
+          <input
+            id="width"
+            type="number"
+            name="inputboxWidth"
+            value=""
+            min="100"
+            max="300"
+            placeholder="100 to 300"
+            id="width"
+          />
+        </div>
+        <div>
+          <label for="height" class="heightText">Height:</label>
+          <input
+            id="height"
+            type="number"
+            name="inputboxHeight"
+            value=""
+            min="100"
+            max="300"
+            placeholder="100 to 300"
+            id="height"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="btnContainer">
+      <button class="btn" value="Click">Get a pic</button>
+    </div>
+
+    <div class="result"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

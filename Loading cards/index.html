@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Loading cards</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <form class="inputForm" name="inputForm">
+      <label for="inputforJS" class="text"
+        >Enter a number of pictures to load:
+      </label>
+      <input
+        type="number"
+        min="1"
+        max="10"
+        name="inputbox"
+        placeholder="1 to 10"
+        value=""
+        id="inputforJS"
+      />
+    </form>
+
+    <button id="btn">get pics</button>
+
+    <div class="result"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Get pics async</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="bubble-container">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+    <div class="title">Fetch Demo</div>
+    <div class="text">Get N pictures from given page via picsum.photos API</div>
+    <div class="inputForm">
+      <div class="inputContainer">
+        <div>
+          <label for="pageNumberID" class="pageNumber">Page number:</label>
+          <input
+            id="pageNumberID"
+            type="number"
+            name="pageNumber"
+            value="1"
+            min="1"
+            max="10"
+          />
+        </div>
+        <div>
+          <label for="limitID" class="limit">N pictures:</label>
+          <input
+            id="limitID"
+            type="number"
+            name="limit"
+            value="1"
+            min="1"
+            max="10"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="btnContainer">
+      <button class="btn">Fetch pictures!</button>
+    </div>
+
+    <div class="resultDiv"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

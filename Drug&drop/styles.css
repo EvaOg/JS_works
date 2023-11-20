@@ -1,0 +1,78 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc;
+}
+.mainText {
+  color: rgb(109, 109, 109);
+  margin: 5% 20%;
+  text-align: center;
+  font-size: large;
+}
+
+#dragContainer {
+  min-height: 100px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 70px;
+  position: relative;
+  margin-left: 50%;
+  padding: 0;
+  left: -35px;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(173, 173, 173);
+  background-color: #fcfcfc;
+}
+
+.square {
+  position: absolute;
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  border: none;
+}
+
+#stickDisappear {
+  z-index: 3;
+  opacity: 0;
+  position: relative;
+}
+
+.mainContainer {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.targetContainer {
+  margin: 5%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  display: flex;
+  justify-content: center;
+  background-color: #fcfcfc;
+}
+
+.text {
+  border: none;
+  position: absolute;
+  margin-top: 35px;
+  color: rgb(174, 173, 173);
+}
+
+#catPng,
+#owlPng,
+#penguinPng {
+  width: 70px;
+  position: absolute;
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
