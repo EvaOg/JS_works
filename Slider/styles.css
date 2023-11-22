@@ -1,0 +1,252 @@
+body {
+  background-color: #eeeeea;
+}
+
+.main-container {
+  max-width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  margin: 25px 15px;
+}
+
+.accordion {
+  width: 100%;
+  background-color: #a1b5d8;
+  color: #fffcf7;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.header:hover {
+  cursor: pointer;
+}
+
+.active {
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.text {
+  padding-left: 10px;
+  background-color: #a1b5d8;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  background-color: #a1b5d8;
+  color: #fffcf7;
+  align-content: center;
+}
+
+.controls {
+  display: none;
+  margin-top: 5%;
+}
+
+/*--------------------CONTAINER PICS 1----------------------------------*/
+
+.containerPics {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  position: relative;
+  border-radius: 10px;
+}
+
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+li {
+  margin-bottom: -5px;
+  float: left;
+  width: 15%;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.img1 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/01/03/21/02/twelve-apostles-587818_1280.jpg");
+}
+
+.img2 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/12/02/20/australia-1973524_1280.jpg");
+}
+
+.img3 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/03/07/45/kangaroos-750853_1280.jpg");
+}
+
+.img4 {
+  background-image: url("https://cdn.pixabay.com/photo/2019/03/04/14/36/blue-mountains-4034261_1280.jpg");
+}
+
+li:hover {
+  width: 50%;
+  transition: 1s ease-in-out;
+}
+
+img {
+  height: 450px;
+  width: 600px;
+  background: center center no-repeat;
+  object-fit: cover !important;
+  border-radius: 10px;
+}
+
+.containerPics1-row {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: white;
+  display: inline;
+  flex-wrap: nowrap;
+}
+
+.icon {
+  align-items: center;
+  background: #a1b5d8;
+  border-radius: 50%;
+  color: #eeeeea;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.description {
+  color: #eeeeea;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  transition-delay: 0.3s;
+  width: 320px;
+}
+
+li:hover .description {
+  opacity: 1 !important;
+  transform: translate(80px, -80px) !important;
+}
+
+/*--------------------CONTAINER PICS 2----------------------------------*/
+
+.container {
+  margin-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 100%;
+  justify-content: start;
+  flex-direction: column;
+  display: none;
+}
+
+.card {
+  align-items: flex-end;
+  background-size: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+.card:hover {
+  width: 102%;
+  height: 300px;
+  opacity: 1;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card:hover .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 730px) {
+  .card:hover {
+    width: 102%;
+    height: calc(100vw * 0.45);
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+  }
+  .containerPics {
+    display: none;
+  }
+
+  .card:hover {
+    width: 102%;
+    height: calc(100vw * 0.47);
+  }
+
+  p {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 20px 10px;
+  }
+
+  .container {
+    display: block;
+  }
+}

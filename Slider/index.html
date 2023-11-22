@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown & gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="container-accordion">
+        <div class="accordion">
+          <button class="header">Currency of Australia</button>
+          <p class="text">
+            The Australian Dollar (AUD) is the currency of Australia. One euro
+            corresponds to approx. 1.55 AUD (as of 03.01.2022). The money can be
+            exchanged in banks or exchange offices. For security reasons, we
+            advise against exchanging money with private individuals.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <button class="header">Cuisine</button>
+          <p class="text">
+            Unfazed by traditions, Australians don't mind combining their native
+            bush food, seafood and meat like crocodile, kangaroo and emu with
+            the spices of their Asian neighbors. They like to cook a roast lamb
+            at Easter, fresh prawns at Christmas and enjoy juicy mangos in the
+            summer.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <button class="header">Language</button>
+          <p class="text">
+            Although Australia does not legally have an official language and
+            English is not the country's official language, it is spoken almost
+            everywhere. Indigenous peoples, such as the Australian Aborigines,
+            speak Australian languages, which are divided into a variety of
+            language families and groups.
+          </p>
+        </div>
+      </div>
+
+      <div class="containerPics">
+        <ul>
+          <li>
+            <img class="img1" />
+            <div class="containerPics1-row">
+              <div class="icon">1</div>
+              <div class="description">
+                <h4>Seven sisters</h4>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="img2" />
+            <div class="containerPics1-row">
+              <div class="icon">2</div>
+              <div class="description">
+                <h4>Mountains</h4>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="img3" />
+            <div class="containerPics1-row">
+              <div class="icon">3</div>
+              <div class="description">
+                <h4>Kenguru</h4>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="img4" />
+            <div class="containerPics1-row">
+              <div class="icon">4</div>
+              <div class="description">
+                <h4>Blue mountains</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <input type="radio" name="slide" id="c1" checked />
+        <label class="img1 card">
+          <div class="row">
+            <div class="icon">1</div>
+            <div class="description">
+              <h4>Seven sisters</h4>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c2" />
+        <label class="img2 card">
+          <div class="row">
+            <div class="icon">2</div>
+            <div class="description">
+              <h4>Mountains</h4>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c3" />
+        <label class="img3 card">
+          <div class="row">
+            <div class="icon">3</div>
+            <div class="description">
+              <h4>Kenguru</h4>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c4" />
+        <label class="card img4">
+          <div class="row">
+            <div class="icon">4</div>
+            <div class="description">
+              <h4>Blue mountains</h4>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
